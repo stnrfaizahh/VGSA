@@ -4,6 +4,7 @@ use App\Http\Controllers\pengajarController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\CRUDController;
+use App\Http\Controllers\halloController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\WelcomeController;
 
@@ -103,5 +104,10 @@ Route::get('/selamat',function(){
 
 Route::get('/greeting', [
     WelcomeController::class,
+    'greeting'
+]);
+
+Route::get('/greeting', [
+    halloController::class,
     'greeting'
 ]);
