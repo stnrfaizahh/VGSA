@@ -44,3 +44,7 @@ Route::get('/posts/{post}/{comment}', function ($post, $comment){
 Route::get('/user{Siti?}', function ($name=null){
     return 'Nama saya' . $name;
 });
+
+Route::get('/kodebarang{Boneka?}', function ($jk='k01', $mrk='bonavie'){
+    return "Kode barang $jk dan nama barang $mrk";
+});
