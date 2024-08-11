@@ -28,3 +28,7 @@ Route::get('/world', function(){
 Route::get('/welcome', function(){
     return 'Selamat Datang';
 });
+
+Route::get('/about', function(){
+    return 'NIM : 2231740013';
+});
