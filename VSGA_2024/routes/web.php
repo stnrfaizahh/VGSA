@@ -40,3 +40,7 @@ Route::get('/user/{Faizah}', function($name){
 Route::get('/posts/{post}/{comment}', function ($post, $comment){
     return 'Pos ke-' . $post . " Komentar ke-: " . $comment;
 });
+
+Route::get('/user{Siti?}', function ($name=null){
+    return 'Nama saya' . $name;
+});
