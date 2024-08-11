@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\WelcomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -98,3 +100,8 @@ Route::resource('photos', PhotoController::class)->except([
 Route::get('/selamat',function(){
     return view('hello',['name'=>'faizah']);
 });
+
+Route::get('/greeting', [
+    WelcomeController::class,
+    'greeting'
+]);
