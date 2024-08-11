@@ -24,3 +24,7 @@ Route::get('/Hello', function(){
 Route::get('/world', function(){
     return 'hello Dunia';
 });
+
+Route::get('/welcome', function(){
+    return 'Selamat Datang';
+});
