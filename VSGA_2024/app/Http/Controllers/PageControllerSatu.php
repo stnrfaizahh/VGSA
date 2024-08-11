@@ -10,6 +10,7 @@ class PageControllerSatu extends Controller
         return view('welcome');
     }
     public function satu(){
-        return " data pertama";
+        $aarBuah = ["pisang", "rambutan", "duku", "jambu"];
+        return view('pasarBuah')->with('pasarBuah', $aarBuah);
     }
 }
