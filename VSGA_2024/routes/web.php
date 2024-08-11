@@ -48,3 +48,11 @@ Route::get('/user{Siti?}', function ($name=null){
 Route::get('/kodebarang{Boneka?}', function ($jk='k01', $mrk='bonavie'){
     return "Kode barang $jk dan nama barang $mrk";
 });
+
+Route::get('about', function(){
+    return view('about');
+})->name('about');
+
+Route::get('tampil', function(){
+    return view('tampil');
+})->name('tampil');
