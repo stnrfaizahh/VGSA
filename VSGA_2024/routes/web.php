@@ -32,3 +32,7 @@ Route::get('/welcome', function(){
 Route::get('/about', function(){
     return 'NIM : 2231740013';
 });
+
+Route::get('/user/{Faizah}', function($name){
+    return 'Nama saya ' .$name;
+});
